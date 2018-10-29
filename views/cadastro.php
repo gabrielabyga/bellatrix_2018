@@ -70,7 +70,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Nome" id="name"  placeholder="Insira seu nome"/>
+                                    <input type="text" class="form-control" name="Nome" id="Nome"  placeholder="Insira seu nome"/>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Login_usu" id="username"  placeholder="Insira seu nome de usuário"/>
+                                    <input type="text" class="form-control" name="Login_usu" id="Login_usu"  placeholder="Insira seu nome de usuário"/>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="Senha_usu" id="password"  placeholder="Insira sua senha"/>
+                                    <input type="password" class="form-control" name="Senha_usu" id="Senha_usu"  placeholder="Insira sua senha"/>
                                 </div>
                             </div>
                         </div>
@@ -98,13 +98,13 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Email" id="email"  placeholder="Insira seu Email"/>
+                                    <input type="text" class="form-control" name="Email" id="Email"  placeholder="Insira seu Email"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group ">
-                            <button name="gravar" type="button" href="../controlador/usuario.php" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
+                            <button name="inserir" type="submit" href="../controlador/usuario.php" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
                         </div>
                         <div class="login-register">
                             <a class="cancell" href="index.php">Cancelar </a>
