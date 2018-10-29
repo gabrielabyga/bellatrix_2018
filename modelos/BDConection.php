@@ -9,7 +9,7 @@
 class BDConection
 {
     const HOST      = "localhost";
-    const NOMEBANCO = "BD_BELLATRIX";
+    const NOMEBANCO = "bd_bellatrix";
     const USUARIO   = "root";
     const SENHA     = "root";
 
