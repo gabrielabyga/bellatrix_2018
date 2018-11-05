@@ -63,17 +63,8 @@
                     </div>
                 </div> 
                 <div class="main-login main-center">
-                    <form class="form-horizontal" method="post" action="../controlador/usuario.php">
-                        
-                        <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Nome</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Nome" id="Nome"  placeholder="Insira seu nome"/>
-                                </div>
-                            </div>
-                        </div>
+                    <form class="form-horizontal" method="post" action="../controlador/usuario.php?acao=inserir">
+
                         <div class="form-group">
                             <label for="username" class="cols-sm-2 control-label">Usuário</label>
                             <div class="cols-sm-10">
@@ -102,9 +93,18 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Nome</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="Nome" id="Nome"  placeholder="Insira seu nome"/>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="form-group ">
-                            <button name="inserir" type="submit" href="../controlador/usuario.php" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
+                            <button name="gravar" type="submit" href="telalogado.php" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
                         </div>
                         <div class="login-register">
                             <a class="cancell" href="index.php">Cancelar </a>

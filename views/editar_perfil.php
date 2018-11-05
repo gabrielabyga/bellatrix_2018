@@ -71,31 +71,30 @@
             <h3>editar informações
 </h3>
 
-
-            <form>
-  <div class="form-group">
-    <label for="Nome">Nome</label>
-    <input  class="form-control" id="inputnome"  placeholder="Digite seu nome">
-
-  </div>
-
-  <div class="form-group">
-    <label for="Email">Endereço de email</label>
-    <input type="email" class="form-control" id="inputemail" placeholder="Digite seu email">
-  </div>
+            <form method="post" action="../controlador/usuario.php?acao=editar">
 
   <div class="form-group">
     <label for="Login_usu">Nome de usuário</label>
-    <input type="login" class="form-control" id="inputlogin" placeholder="Escolha um nome de usuário"">
+    <input type="login" class="form-control" id="Login_usu" name="Login_usu" placeholder="Escolha um nome de usuário"">
 
   </div>
 
   <div class="form-group">
     <label for="Senha_usu">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Escolha uma senha">
+    <input type="password" class="form-control" id="Senha_usu" name="Senha_usu" placeholder="Escolha uma senha">
   </div>
+                <div class="form-group">
+                    <label for="Email">Endereço de email</label>
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Digite seu email">
+                </div>
+
+                <div class="form-group">
+                    <label for="Nome">Nome</label>
+                    <input  class="form-control" id="Nome" name="Nome" placeholder="Digite seu nome">
+
+                </div>
   <br>
-  <button type="submit" class="btn btn-outline-success" href="perfil.php">Alterar informações</button>
+  <button type="submit" class="btn btn-outline-success">Alterar informações</button>
 </form>
 
         </div>
