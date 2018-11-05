@@ -30,10 +30,10 @@
 
                 // depois de preencher o formulario
 
-                $nome = $_POST['Nome'];
                 $login= $_POST['Login_usu'];
                 $senha= $_POST['Senha_usu'];
                 $email= $_POST['Email'];
+                $nome = $_POST['Nome'];
                 $novoUsuario = new Usuario($nome,$login, $senha,$email);
 
                 $crud = new CrudUsuarios();
@@ -75,14 +75,17 @@
 
         case 'editar':
 
-            $nome = $_POST['Nome'];
+            var_dump($_POST);
             $login= $_POST['Login_usu'];
             $senha= $_POST['Senha_usu'];
             $email= $_POST['Email'];
+            $nome = $_POST['Nome'];
             $crud = new CrudUsuarios();
-            $atualizar = $crud->updateUsuario();
 
-            // header('Location: perfil.php');
+            $usuario = new Usuario($nome,$login,$senha,$email);
+            $atualizar = $crud->updateUsuario($usuario);
+
+             header('Location: ../views/perfil.php');
 
             break;
 
