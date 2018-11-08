@@ -49,6 +49,8 @@
   <script src="contactform/contactform.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
@@ -106,6 +108,10 @@
   <!--==========================
     Services Section
   ============================-->
+
+  <div class="alert alert-danger" role="alert">
+      <strong>Ops!</strong> Seu login e/ou senha estão incorretos, <a href="login.php" class="alert-link"> tentar novamente</a> 
+      </div>
 
     <section id="services" >
 
@@ -212,10 +218,11 @@
   <!--==========================
     Footer
   ============================-->
-
-
-
-
 </body>
-
+ <script>
+    $(document).ready(function(){
+        $().alert("O login e/ou a senha estão incorretos."){
+            
+    };
+    </script>
 </html>

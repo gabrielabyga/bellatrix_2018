@@ -21,7 +21,7 @@
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="cadastro.css">
 
-        <title>Admin</title>
+        <title>Bellatrix</title>
     </head>
     <body>
 
@@ -63,14 +63,23 @@
                     </div>
                 </div> 
                 <div class="main-login main-center">
-                    <form class="form-horizontal" method="post" action="../controlador/usuario.php?acao=inserir">
+                    <form class="form-horizontal" action="../controlador/usuario.php?acao=inserir"  method="post">
 
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Nome</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="nome" placeholder="Insira seu nome"/>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="username" class="cols-sm-2 control-label">Usuário</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Login_usu" id="Login_usu"  placeholder="Insira seu nome de usuário"/>
+                                    <input type="text" class="form-control" name="login" placeholder="Insira seu nome de usuário"/>
                                 </div>
                             </div>
                         </div>
@@ -79,32 +88,22 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="Senha_usu" id="Senha_usu"  placeholder="Insira sua senha"/>
+                                    <input type="password" class="form-control" name="senha" placeholder="Insira sua senha"/>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="form-group">
+                         <div class="form-group">
                             <label for="email" class="cols-sm-2 control-label">Email</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Email" id="Email"  placeholder="Insira seu Email"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Nome</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="Nome" id="Nome"  placeholder="Insira seu nome"/>
+                                    <input type="text" class="form-control" name="email" placeholder="Insira seu Email"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group ">
-                            <button name="gravar" type="submit" href="telalogado.php" class="btn btn-primary btn-lg btn-block login-button">Cadastrar</button>
+                            <button class="btn btn-primary btn-lg btn-block login-button" type="submit" href="../controlador/usuario.php?acao=inserir" name="gravar">Cadastrar</button>
                         </div>
                         <div class="login-register">
                             <a class="cancell" href="index.php">Cancelar </a>
@@ -113,12 +112,8 @@
                 </div>
             </div>
         </div>
-
-
-
-
+       
         <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-        
+   
     </body>
 </html>
