@@ -29,13 +29,14 @@
             }else{
 
                 // depois de preencher o formulario
+                //var_dump($_POST);
 
-                $login= $_POST['Login_usu'];
-                $senha= $_POST['Senha_usu'];
-                $email= $_POST['Email'];
-                $nome = $_POST['Nome'];
+                $nome = $_POST['nome'];
+                $login= $_POST['login'];
+                $senha= $_POST['senha'];
+                $email= $_POST['email'];
+
                 $novoUsuario = new Usuario($nome,$login, $senha,$email);
-
                 $crud = new CrudUsuarios();
                 $crud->insertUsuario($novoUsuario);
 
@@ -60,7 +61,7 @@
                     header('location: ../views/telalogado.php');
                 }else{
 
-                    header('location: ../views/index.php');
+                    header('location: ../views/2index.php');
                 }
 
 
