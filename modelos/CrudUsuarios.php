@@ -55,7 +55,7 @@ class CrudUsuarios
 
     public function updateUsuario(Usuario $usuario){
 
-        $consulta = "UPDATE usuario SET Login_usu = '{$usuario->getLoginUsu()}',  Senha_usu = '{$usuario->getSenhaUsu()}', Email = '{$usuario->getEmail()}',Nome = '{$usuario->getNome()}' WHERE Id={$usuario->getId()}";
+        $consulta = "UPDATE usuario SET Login_usu = '{$usuario->getLoginUsu()}',  Senha_usu = '{$usuario->getSenhaUsu()}', Email = '{$usuario->getEmail()}',Nome = '{$usuario->getNome()}'";
         echo $consulta;
         try{
             $res = $this->conexao->exec($consulta);
