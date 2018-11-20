@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Nov-2018 às 04:30
+-- Generation Time: 20-Nov-2018 às 20:42
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -32,7 +32,9 @@ CREATE TABLE `comenta` (
   `fk_posts_Cod_post` int(11) DEFAULT NULL,
   `fk_usuario_Id` int(11) DEFAULT NULL,
   `data_com` date DEFAULT NULL,
-  `hora` time DEFAULT NULL
+  `hora` time DEFAULT NULL,
+  `texto` varchar(8000) DEFAULT NULL,
+  `id_com` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -138,6 +140,7 @@ INSERT INTO `usuario` (`Login_usu`, `Senha_usu`, `Email`, `Nome`, `Id`) VALUES
 -- Indexes for table `comenta`
 --
 ALTER TABLE `comenta`
+  ADD PRIMARY KEY (`id_com`),
   ADD KEY `FK_comenta_1` (`fk_posts_Cod_post`),
   ADD KEY `FK_comenta_2` (`fk_usuario_Id`);
 
