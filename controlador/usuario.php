@@ -36,7 +36,7 @@
                 $senha= $_POST['senha'];
                 $email= $_POST['email'];
 
-                $novoUsuario = new Usuario($nome,$login, $senha,$email);
+                $novoUsuario = new Usuario($nome,$login,$senha,$email);
                 $crud = new CrudUsuarios();
                 $crud->insertUsuario($novoUsuario);
 
@@ -92,7 +92,7 @@
 
         case 'excluir':
         $crud = new CrudUsuarios();
-        $apagar = $crud->deleteUsuario();
+        $apagar = $crud->deleteUsuario($_SESSION['Id']);
 
         header('Location: ../views/usuarios/index.php');
         break;
