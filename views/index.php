@@ -82,10 +82,14 @@
           <li><a href="#team">Sobre</a></li>
           <li class="menu-has-children"><a href="">Categorias</a>
             <ul>
-              <li><a href="#">Cometas</a></li>
-              <li><a href="#">Satélites</a></li>
-              <li><a href="#">Estrelas</a></li>
-              <li><a href="#">Galáxias</a></li>
+              <li><a href="login.php">Cometas</a></li>
+              <li><a href="login.php">Satélites</a></li>
+              <li><a href="login.php">Estrelas</a></li>
+              <li><a href="login.php">Galáxias</a></li>
+              <li><a href="login.php">Nebulosas</a></li>
+              <li><a href="login.php">História</a></li>
+              <li><a href="login.php">Planetas</a></li>
+              <li><a href="login.php">Sistema Solar</a></li>
             </ul>
           </li>
           <li><a href="login.php">Login</a></li>
