@@ -9,9 +9,9 @@
 class BDConection
 {
     const HOST      = "localhost";
-    const NOMEBANCO = "bd_bellatrix";
+    const NOMEBANCO = "BD_BELLATRIX";
     const USUARIO   = "root";
-    const SENHA     = "";
+    const SENHA     = "root";
 
     public static function getConexao(){
         $conexao = new PDO("mysql:host=".self::HOST.";dbname=".self::NOMEBANCO, self::USUARIO, self::SENHA);

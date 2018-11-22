@@ -32,8 +32,8 @@ class CrudUsuarios
 
     public function insertUsuario(Usuario $usuario){
 
-        $consulta = "INSERT INTO usuario (Nome,Login_usu, Senha_usu, Email) VALUES ( '{$usuario->getNome()}', '{$usuario->getLoginUsu()}', '{$usuario->getSenhaUsu()}', '{$usuario->getEmail()}')";
-        //echo $consulta;
+        $consulta = "INSERT INTO usuario (Nome, Login_usu, Senha_usu, Email) VALUES ( '{$usuario->getNome()}', '{$usuario->getLoginUsu()}', '{$usuario->getSenhaUsu()}', '{$usuario->getEmail()}')";
+        echo $consulta;
         try{
             $res = $this->conexao->exec($consulta);
             //return $res;
