@@ -90,16 +90,19 @@
 
                 <div class="form-group">
                     <label for="Nome">Nome</label>
-                    <input  class="form-control" id="Nome" name="Nome" placeholder="Digite seu nome">
+                    <input  class="form-control" id="Nome"  name="Nome" placeholder="Digite seu nome">
 
                 </div>
   <br>
   <button type="submit" class="btn btn-outline-success">Alterar informações</button>
+
+
 </form>
 
         </div>
 
 </div>
+
 </section>
 
 
